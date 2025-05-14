@@ -19,13 +19,13 @@ class _LandingPageState extends State<LandingPage> {
                 child: Container(
                   margin: const EdgeInsets.all(5.0), // Add some margin
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    // color: Colors.white,
                     borderRadius: BorderRadius.circular(12.0),
                   ),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(12.0),
                     child: Image.asset(
-                      'assets/images/vanick2.jpg',
+                      'assets/images/vanick3.png',
                       // fit: BoxFit.cover, // Makes the image occupy all space
                     ),
                   ),
@@ -36,28 +36,35 @@ class _LandingPageState extends State<LandingPage> {
                 child: Column(
                   children: [
                     SizedBox(
-                        width: double.infinity,
-                        height: 60.0,
-                        child: ElevatedButton(
-                            onPressed: () => (),
-                            child: Text('Sign up',
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 15,
-                                )))),
+                      width: double.infinity,
+                      height: 60.0,
+                      child: OutlinedButton(
+                        onPressed: () => (),
+                        child: Text('Sign up',
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
+                            )),
+                        style: OutlinedButton.styleFrom(
+                            side: BorderSide(width: 2)),
+                      ),
+                    ),
                     SizedBox(
                       height: 20,
                     ),
                     SizedBox(
                         width: double.infinity,
                         height: 60.0,
-                        child: ElevatedButton(
-                            onPressed: () => (),
-                            child: Text('Login',
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 15,
-                                )))),
+                        child: OutlinedButton(
+                          onPressed: () => (),
+                          child: Text('Login',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 20,
+                              )),
+                          style: OutlinedButton.styleFrom(
+                              side: BorderSide(width: 2)),
+                        )),
                     SizedBox(
                       height: 20.0,
                     )
