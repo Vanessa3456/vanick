@@ -1,4 +1,8 @@
+// ignore_for_file: prefer_const_constructors, sort_child_properties_last
+
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
+import 'package:vanick/routes.dart';
 
 class LandingPage extends StatefulWidget {
   const LandingPage({super.key});
@@ -24,10 +28,7 @@ class _LandingPageState extends State<LandingPage> {
                   ),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(12.0),
-                    child: Image.asset(
-                      'assets/images/vanick3.png',
-                      // fit: BoxFit.cover, // Makes the image occupy all space
-                    ),
+                    child: LottieBuilder.asset('assets/images/name.json'),
                   ),
                 ),
               ),
@@ -39,7 +40,9 @@ class _LandingPageState extends State<LandingPage> {
                       width: double.infinity,
                       height: 60.0,
                       child: OutlinedButton(
-                        onPressed: () => (),
+                        onPressed: () {
+                          Navigator.pushNamed(context, Routes.register);
+                        },
                         child: Text('Sign up',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
@@ -56,7 +59,9 @@ class _LandingPageState extends State<LandingPage> {
                         width: double.infinity,
                         height: 60.0,
                         child: OutlinedButton(
-                          onPressed: () => (),
+                          onPressed: () {
+                            Navigator.pushNamed(context, Routes.login);
+                          },
                           child: Text('Login',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
