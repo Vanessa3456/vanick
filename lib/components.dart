@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class TextForm extends StatelessWidget {
   // final text;
@@ -111,7 +112,7 @@ class MyButton extends StatelessWidget {
         padding: EdgeInsets.all(10),
         margin: EdgeInsets.symmetric(horizontal: 25),
         decoration: BoxDecoration(
-            color: Colors.grey.shade700,
+            color: Colors.grey.shade600,
             borderRadius: BorderRadius.circular(30)),
         child: Center(
           child: Text(
@@ -153,4 +154,15 @@ class _OutlineButtonsState extends State<OutlineButtons> {
           backgroundColor: Colors.grey.shade300),
     );
   }
+}
+
+void showToast({required String message}) {
+  Fluttertoast.showToast(
+      msg: message,
+      toastLength: Toast.LENGTH_SHORT,
+      gravity: ToastGravity.TOP,
+      timeInSecForIosWeb: 1,
+      backgroundColor: Colors.grey,
+      textColor: Colors.white,
+      fontSize: 16.0);
 }

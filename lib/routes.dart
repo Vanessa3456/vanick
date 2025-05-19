@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:vanick/pages/firebase_auth_service.dart';
+import 'package:vanick/pages/forgot_pass.dart';
 import 'package:vanick/pages/google_signin.dart';
 import 'package:vanick/pages/home_page.dart';
 import 'package:vanick/pages/landing_page.dart';
@@ -15,6 +17,8 @@ class Routes {
   static const String otp = '/otp';
   static const String home = '/home';
   static const String googleSignin = '/googleSign';
+    static const String forgotpass = '/forgotpass';
+
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
@@ -32,6 +36,8 @@ class Routes {
         return MaterialPageRoute(builder: (_) => const HomePage());
       case googleSignin:
         return MaterialPageRoute(builder: (_) => const GoogleSignin());
+      case forgotpass:
+        return MaterialPageRoute(builder: (_)=>const ForgotPass());
 
       default:
         return MaterialPageRoute(builder: (_) => const SplashScreen());
