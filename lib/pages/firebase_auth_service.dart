@@ -38,6 +38,7 @@ class FirebaseAuthService {
       );
       showToast(message: "Login successful");
       return credential.user;
+
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {
         showToast(message: "No user found with this email.");
@@ -53,4 +54,11 @@ class FirebaseAuthService {
     }
     return null;
   }
+
+
+  bool loggedIn(){
+  return _auth.currentUser!=null;
+  }
+
+
 }
