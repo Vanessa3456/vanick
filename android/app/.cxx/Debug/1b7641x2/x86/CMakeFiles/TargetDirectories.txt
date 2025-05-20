@@ -1,0 +1,2 @@
+/home/nick/Desktop/vanick/android/app/.cxx/Debug/1b7641x2/x86/CMakeFiles/edit_cache.dir
+/home/nick/Desktop/vanick/android/app/.cxx/Debug/1b7641x2/x86/CMakeFiles/rebuild_cache.dir

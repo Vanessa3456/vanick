@@ -1,0 +1,1 @@
+/home/nick/Desktop/vanick/build/app/intermediates/cxx/Debug/1b7641x2/obj/arm64-v8a

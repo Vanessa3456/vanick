@@ -21,6 +21,7 @@ class Routes {
 
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
+
     switch (settings.name) {
       case splash:
         return MaterialPageRoute(builder: (_) => const SplashScreen());

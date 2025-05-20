@@ -26,6 +26,26 @@ dependencies:
   google_sign_in: ^6.2.2
   font_awesome_flutter: ^10.8.0
 
+  google_maps_flutter: ^2.5.0
+  geolocator: ^11.0.0
+  geocoding: ^2.1.0
+  flutter_polyline_points: ^2.1.0
+
+
+  google_generative_ai: ^0.4.6
+
+  permission_handler: ^11.0.0
+
+  shared_preferences: ^2.2.2
+  google_place: ^0.4.7
+
+dependency_overrides:
+  http: ^1.2.1
+
+
+
+
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
