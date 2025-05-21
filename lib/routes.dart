@@ -34,7 +34,7 @@ class Routes {
       case otp:
         return MaterialPageRoute(builder: (_) => const OTPLogin());
       case home:
-        return MaterialPageRoute(builder: (_) => const HomePage());
+        return MaterialPageRoute(builder: (_) =>  HomePage());
       case googleSignin:
         return MaterialPageRoute(builder: (_) => const GoogleSignin());
       case forgotpass:
